@@ -1,0 +1,275 @@
+/* Completely rewritten with vanilla CSS instead of Tailwind */
+@import url("https://fonts.googleapis.com/css2?family=Creepster&family=Griffy:wght@400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #1a1a2e 0%, #4a1a4a 50%, #8b4513 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: "Griffy", cursive;
+}
+
+.menu-container {
+  background-color: #2d2d2d;
+  border-radius: 32px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+  padding: 32px;
+  max-width: 600px;
+  width: 100%;
+  transform: rotate(1deg);
+  transition: transform 0.3s ease;
+  border: 4px solid #ff6b35;
+  position: relative;
+}
+
+.menu-container:hover {
+  transform: rotate(0deg);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.spooky-title {
+  font-family: "Creepster", cursive;
+  font-size: 2.5rem;
+  color: #ff9500;
+  margin-bottom: 8px;
+}
+
+.header-line {
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #ff6b35, #8b5cf6);
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.menu-item {
+  border-radius: 16px;
+  padding: 24px;
+  border: 2px solid;
+  transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: scale(1.05);
+}
+
+.shots-section {
+  background: linear-gradient(135deg, #6b46c1, #4b5563);
+  border-color: #8b5cf6;
+  cursor: pointer;
+}
+
+.jungle-section {
+  background: linear-gradient(135deg, #c2410c, #4b5563);
+  border-color: #ff6b35;
+}
+
+.item-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item-title {
+  font-family: "Griffy", cursive;
+  font-size: 1.5rem;
+  margin-bottom: 4px;
+}
+
+.shots-section .item-title {
+  color: #d8b4fe;
+}
+
+.jungle-section .item-title {
+  color: #fed7aa;
+}
+
+.item-subtitle {
+  font-family: "Griffy", cursive;
+  font-size: 2rem;
+  color: #d1d5db;
+}
+
+.item-price {
+  text-align: right;
+}
+
+.price {
+  font-family: "Creepster", cursive;
+  font-size: 1.875rem;
+  color: #ff9500;
+}
+
+.price-unit {
+  font-family: "Griffy", cursive;
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+
+.shot-menu {
+  background-color: #374151;
+  border-radius: 16px;
+  padding: 16px;
+  border: 2px solid #a855f7;
+  transition: all 0.3s ease;
+}
+
+.shot-menu.hidden {
+  display: none;
+}
+
+.shot-menu-title {
+  font-family: "Griffy", cursive;
+  font-size: 1.125rem;
+  color: #d8b4fe;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.shot-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.shot-option {
+  padding: 12px;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Griffy", cursive;
+}
+
+.shot-option:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.white-tea {
+  background-color: #4b5563;
+  color: #e5e7eb;
+}
+
+.white-tea:hover {
+  background-color: #6b7280;
+}
+
+.green-tea {
+  background-color: #166534;
+  color: #bbf7d0;
+}
+
+.green-tea:hover {
+  background-color: #15803d;
+}
+
+.vodka {
+  background-color: #1e3a8a;
+  color: #bfdbfe;
+}
+
+.vodka:hover {
+  background-color: #1d4ed8;
+}
+
+.tequila {
+  background-color: #a16207;
+  color: #fef3c7;
+}
+
+.tequila:hover {
+  background-color: #ca8a04;
+}
+
+.close-button {
+  width: 100%;
+  background-color: #4b5563;
+  color: #e5e7eb;
+  font-family: "Griffy", cursive;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.close-button:hover {
+  background-color: #6b7280;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 2px solid #4b5563;
+}
+
+.footer-main {
+  font-family: "Griffy", cursive;
+  font-size: 0.875rem;
+  color: #fed7aa;
+}
+
+.footer-sub {
+  font-family: "Griffy", cursive;
+  font-size: 0.75rem;
+  color: #9ca3af;
+  margin-top: 4px;
+}
+
+.decoration {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+.decoration-top {
+  top: -8px;
+  right: -8px;
+  width: 32px;
+  height: 32px;
+  background-color: #ff6b35;
+}
+
+.decoration-bottom {
+  bottom: -8px;
+  left: -8px;
+  width: 24px;
+  height: 24px;
+  background-color: #8b5cf6;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-out;
+}

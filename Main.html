@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halloween Drink Menu</title>
+    <!-- Removed Tailwind CDN and using only custom CSS -->
+    <link rel="stylesheet" href="style.css">
+      <script src="Function.Js"></script>
+</head>
+<body>
+    <div class="menu-container">
+        <!-- Header -->
+        <div class="header">
+            <h1 class="spooky-title">🎃 SPOOKY MENU 🎃</h1>
+            <div class="header-line"></div>
+        </div>
+
+        <!-- Menu Items -->
+        <div class="menu-items">
+            <!-- Shots Section -->
+            <div class="menu-item shots-section" onclick="toggleShotMenu()">
+                <div class="item-content">
+                    <div class="item-info">
+                        <h2 class="item-title">🧪 POISON SHOTS</h2>
+                        <p class="item-subtitle">Click to see varieties</p>
+                    </div>
+                    <div class="item-price">
+                        <span class="price">$3</span>
+                        <p class="price-unit">each</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Shot selection menu -->
+            <div id="shotMenu" class="shot-menu hidden">
+                <h3 class="shot-menu-title">Choose Your Poison:</h3>
+                <div class="shot-options">
+                    <div class="shot-option white-tea">
+                        <span>🍃 White Tea Shot</span>
+                    </div>
+                    <div class="shot-option green-tea">
+                        <span>🍵 Green Tea Shot</span>
+                    </div>
+                    <div class="shot-option vodka">
+                        <span>🥃 Vodka Shot</span>
+                    </div>
+                    <div class="shot-option tequila">
+                        <span>🌵 Tequila Shot</span>
+                    </div>
+                </div>
+                <button onclick="toggleShotMenu()" class="close-button">
+                    Close Menu
+                </button>
+            </div>
+
+            <!-- Jungle Juice Section -->
+            <div class="menu-item jungle-section">
+                <div class="item-content">
+                    <div class="item-info">
+                        <h2 class="item-title">🧙‍♀️ WITCH'S BREW</h2>
+                        <p class="item-subtitle">( Jungle Juice )</p>
+                    </div>
+                    <div class="item-price">
+                        <span class="price">$5</span>
+                        <p class="price-unit">per cup</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p class="footer-main">👻 Happy Halloween! 👻</p>
+            <p class="footer-sub">Cash only • Drink if you dare</p>
+        </div>
+
+        <!-- Decorative elements -->
+        <div class="decoration decoration-top"></div>
+        <div class="decoration decoration-bottom"></div>
+    </div>
+
+</body>
+</html>
+ 
